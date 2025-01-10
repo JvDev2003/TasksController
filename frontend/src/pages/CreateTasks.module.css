@@ -1,0 +1,90 @@
+.container {
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+    input, select, button{
+        border: 2px solid #323ca8;
+        border-radius: 10px;
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+
+    select {
+        appearance: none; 
+    }
+
+
+    button, input[type=submit]{
+        background-color: #323ca8;
+    }
+
+    .form {
+        width: 50dvw;
+        height: 100dvh;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+
+        > div{
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+
+
+        }
+
+        .dates{
+            div{
+                
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    gap: 5;
+
+                    div{
+                        display: flex;
+                        flex-direction: row;
+                    }
+                    
+                }
+            }
+        }
+
+        .reusable, .time, .dates{
+            > div{
+                display: flex;
+                flex-direction: column;
+                label{
+                    margin-right: 10px;
+                }
+
+                ul{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    list-style: none;
+                    margin: 10px 0;
+                    gap: 5px;
+                    li{
+                        padding: 10px;
+                        border: 1px solid white;
+                        border-radius: 10px;
+                        text-align: center;
+                    }
+                }
+
+            }
+
+        }
+
+        .time{
+            flex-direction: column;
+        }
+    }
+}

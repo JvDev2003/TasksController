@@ -1,0 +1,74 @@
+.main{
+    display: flex;
+    min-width: 100dvw;
+    justify-content: space-evenly;
+    padding: 10px;
+
+    > div{
+        width: 100%;
+        padding: 20px;
+
+        >ul{
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+
+            > li{
+                min-height: 40px;
+                display: flex;
+                align-items: center;
+                padding: 10px;
+                border-radius: 10px;
+                gap: 10px;
+                transition: .3s;
+
+                span{
+                    background-color: transparent;
+                }
+
+                >div{
+                    display: flex;
+                    background-color: transparent;
+                    gap: 10px;
+                    >span{
+                        border: 2px solid whitesmoke;
+                        padding: 5px;
+                    }
+                }
+            }
+
+            li:hover{
+                cursor: pointer;
+            }
+
+            .normal:nth-child(odd){
+                background-color: rgb(37, 37, 37);
+
+            }
+
+            .normal:nth-child(odd):hover{
+                background-color: rgb(75, 75, 75);
+            }
+
+            .normal:nth-child(even):hover{
+                background-color: rgb(59, 59, 59);;
+            }
+
+        }
+
+        .selected{
+            background-color: #323ca8;
+        }
+
+        .selected:hover{
+            background-color: #454fb4;
+        }
+    }
+
+    .details {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+}

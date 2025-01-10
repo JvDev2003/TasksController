@@ -1,0 +1,67 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100dvw;
+    height: 100dvh;
+    padding: 10px;
+
+    ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        li{
+            display: flex;
+            justify-content: space-between;
+            min-width: 40dvw;
+            border: 2px solid #323ca8;
+            border-radius: 10px;
+            padding: 15px;
+
+            .data{
+                display: flex;
+                flex-direction: column;
+                gap: 3px;
+            }
+
+            .days, .time{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 5px;
+
+                >span{
+                    border: 2px solid #323ca8;
+                    border-radius: 10px;
+                    padding: 5px;
+                }
+            }
+
+            .actions{
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+                .delete{
+                    border: 2px solid #900101;
+                }
+
+                button{
+                    border: 2px solid #323ca8;
+                    padding: 5px;
+                    border-radius: 10px;
+                    transition: .5s;
+
+                    img{
+                        background-color: transparent;
+                    }
+                }
+
+                button:hover{
+                    background-color: rgb(30, 30, 30);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
